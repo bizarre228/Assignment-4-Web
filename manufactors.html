@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Furniture Store</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="mycss.css">
+        </head>
+<header id="home">
+  <h1 class="fw-bolder pt-5 ">BEST PRODUCTS</h1>
+  <h4>Made with love</h1>
+</header>
+<body class="text-center">
+    <nav class="navbar navbar-expand-sm bg-secondary justify-content-center sticky-top">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5" href="./base.html">Home</a>
+          </li>
+        </ul>
+    </nav>
+    <div class="card-group">
+        <div class="card bg-secondary">
+          <img id="img-card" src="images/factory.jpg" class="card-img-top" alt="factory">
+          <div class="card-body">
+            <h5 class="card-title">Some company name</h5>
+            <p class="card-text">Desc</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Some company name</small>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img id="img-card" src="images/factory.jpg" class="card-img-top" alt="factory">
+          <div class="card-body">
+            <h5 class="card-title">Some company name</h5>
+            <p class="card-text">Desc</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">USA</small>
+          </div>
+        </div>
+        <div class="card bg-secondary">
+          <img id="img-card" src="images/factory.jpg" class="card-img-top " alt="factory">
+          <div class="card-body">
+            <h5 class="card-title">Some company name</h5>
+            <p class="card-text">Desc</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Germany</small>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+        <h2 class="text-white">Let's play simple game</h2>
+        <h4 class="text-white">Place the elements in right order!</h3>
+      </div>
+      <br>
+      <div class="container">
+        <div class="game-container">
+            <div class="container-box" id="box1">
+                <div class="container-text text-white">Chair</div>
+            </div>
+            <div class="container-box" id="box2">
+                <div class="container-text text-white">Sofa</div>
+            </div>
+            <div class="container-box" id="box3">
+                <div class="container-text text-white">House</div>
+            </div>
+        </div>
+        <div class="game-container">
+            <img class="object border px-2" draggable="true" id="object1" src="images/chair-solid.svg" alt="Object 1">
+            <img class="object border px-2" draggable="true" id="object2" src="images/couch-solid.svg" alt="Object 2">
+            <img class="object border px-2" draggable="true" id="object3" src="images/house-solid.svg" alt="Object 3">
+        </div>
+      </div>
+      <br>
+      <footer>
+        <p>&copy; 2023 Furniture Store for assignment</p>
+      </footer>
+      <script src="Scripts/manufactors_script.js"></script>
+</body>
+</html>

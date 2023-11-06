@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Furniture Store</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="mycss.css">
+        </head>
+</html>
+<body>
+    <header id="home">
+        <h1 class="fw-bolder pt-5 ">BEST PRODUCTS</h1>
+        <h4>Made with love</h1>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-secondary justify-content-center sticky-top">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5" href="./base.html">Home</a>
+          </li>
+        </ul>
+    </nav>
+    <div class="row container-fluid p-5 my-5 justify-content-center bg-dark text-white">
+        <form id="orderForm" class="col-12 col-md-8 col-lg-6">
+            <div id="order">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Choose what to order</option>
+                    <option value="1">Modern Table</option>
+                    <option value="2">Chair</option>
+                    <option value="3">Sofa</option>
+                </select>
+                
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Choose number of furniture</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Other</option>
+                </select>
+                <br>
+                <hr>
+                <h2 class="text-center">Details</h2>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" class="form-control" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" id="submitBtn" class="btn btn-secondary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <p id="userOutput"></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Furniture Store for assignment</p>
+    </footer>
+    <script src="Scripts/new_order_script.js"></script>
+</body>
